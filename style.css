@@ -1,0 +1,81 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: rgb(209, 209, 110);
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.6);
+}
+.image-container{
+    max-width: 45rem;
+    min-width: 20rem;
+}
+.image-container img{
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.6);
+}
+.about-me{
+    display: flex;
+    padding: 1rem;
+}
+.about-me-content{
+    max-width: 45rem;
+    min-width: 20rem;
+}
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.big-image{
+    max-width: 60rem;
+    min-width: 30rem;
+}
+.big-image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.6);
+}
+.smaller-images{
+    max-width: 40rem;
+    min-width: 20rem;
+}
+.smaller-images img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0, 0.6);
+}
+.smaller-images-container{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+#contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: blueviolet;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (max-width: 768px){
+    .about-me{
+        flex-direction: column;
+    }
+    .smaller-images-container{
+        flex-direction: column;
+    }
+}
